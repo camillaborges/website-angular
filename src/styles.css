@@ -1,0 +1,223 @@
+html {
+    background-color: rgb(255, 255, 255); 
+    font-size: 1.3125rem;
+}
+
+body {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin: 0;
+}
+
+.container {
+    padding: 0 0.2em;
+    max-width: 570px;
+    margin: 0 auto;
+}
+
+.presentation {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+   
+}
+
+h1 {
+    font-size: 3.5rem;
+    margin-top: 0;
+}
+
+h2 {
+    font-size:2.625rem; 
+    margin-top: 0;
+    border-top: 1px white solid;
+    border-bottom: 1px white solid;
+    padding: 0.5em 0;
+}
+
+h1, h2 {
+    font-weight: 300;
+   
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+.bold-text {
+    font-weight: 700;
+    display: block;
+    color: #b3aeae;
+    text-shadow:rgb(241, 245, 247) 0.8em;
+}
+
+h1 span {
+    font-size: 5rem;
+     
+}
+
+h2 span {
+    font-size: 3rem;
+}
+
+p{
+    margin-bottom: 0;
+}
+
+.lkedin,
+.btn,
+.git {
+    color: #666365;  
+    text-decoration: none;
+    font-weight: 700; 
+    font-family: 'Raleway', sans-serif;
+}
+
+.git:hover,
+.git:focus {
+    color: rgb(51, 71, 62); 
+
+}
+
+img {
+    max-width: 100%;   
+}
+
+.my-photo {
+    border-radius: 60%;
+}
+
+.presentation,
+.projects {
+    background: rgb(231, 231, 231);;
+    color: #252525;
+}
+
+.carrer {
+    background: #252525;
+    color: #fff;
+}
+
+.presentation,
+.carrer,
+.projects {
+    padding: 4.5em 0;
+
+}
+
+.btn,
+.lkedin {
+    display: inline-block;
+    font-size: 0.755rem;
+    padding: 0.5em;
+    margin-top: 1em;
+    border-radius: 4px;
+    
+}
+
+.lkedin {
+    background: #8d8b8c; 
+    color: white; 
+}
+
+.btn {
+    background: #252525;
+    color: white;
+}
+
+.btn:hover,
+.btn:focus,
+.lkedin:hover,
+.lkedin:focus {
+    background: #666365; 
+    color: white;
+}
+
+.portfolio-item h3 {
+    margin-bottom: 0.2em;
+    font-size:1rem;
+}
+
+@media(min-width: 600px) {
+    html {
+        font-size: 1.3125rem;
+    }
+}
+
+@media(min-width: 750px) {
+    .about {
+        display: flex;
+    }
+
+    .projects {
+        background: #636363; 
+        color:white;
+        width: 100%;
+        border-top-right-radius: 2.5%;
+        border-bottom-right-radius: 2.5%;
+    }
+
+    .carrer {
+        width: 100%;
+        border-top-left-radius: 2.5%;
+        border-bottom-left-radius: 2.5%;
+    }
+
+    .bold-text,
+    .git {
+        color: rgb(243, 141, 180); 
+    }
+    
+
+    body {
+        margin: 0;
+    }
+
+    .down {
+        margin-bottom: .755em;
+        
+    }
+
+    .portfolio {
+        min-height: 100vh;
+        display: flex;
+        align-items: center; 
+
+    }
+
+    .portfolio-item h3 {
+        margin-bottom: 0.2em;
+        font-size:1rem;
+    }
+
+    .portfolio .container {
+        max-width: 1300px;
+    
+    }
+
+    .portfolio-item  {
+        width: 30%;
+        
+    }
+
+    .portfolio-item img {
+        width: 100%;
+        height: 11em;
+        object-fit: cover;
+    }
+
+    .work {
+        display: flex;
+        justify-content: space-between;
+         
+    }
+
+    .presentation {
+        padding: .3em;
+    }
+
+}
+

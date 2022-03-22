@@ -1,0 +1,54 @@
+.work {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+}
+
+.portfolio {
+    margin-top: 20px;
+}
+
+.down {
+    width: 80%;
+    margin: 0 auto;
+    border-top: 1px rgb(85, 82, 82) solid;
+    border-bottom: 1px rgb(124, 119, 119) solid;
+    padding: 0.5em 0;
+}
+
+.bold-text {
+    color: rgb(48, 52, 90);
+}
+
+p {
+    margin: 0 0 30px 0;
+    text-align: justify;
+    padding: 5px;
+}
+
+@media(min-width: 750px) {
+    .work {
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+        margin: 15px 0 15px 0;
+    }
+    
+    .portfolio {
+        margin-top: 20px;
+    }
+    
+    .down {
+        width: 80%;
+        margin: 0 auto;
+        border-top: 1px rgb(48, 52, 90) solid;
+        border-bottom: 1px rgb(48, 52, 90) solid;
+        padding: 0.5em 0;
+    }
+    
+    .bold-text {
+        color: rgb(48, 52, 90);
+    }
+
+}
