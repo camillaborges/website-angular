@@ -19,9 +19,4 @@ describe('MenuComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should sum numbers properly', () => {
-    expect(component.sum(5, 2)).toBe(7);
-  });
-
-
 });

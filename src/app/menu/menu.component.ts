@@ -12,12 +12,20 @@ export class MenuComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  public sum(number1: number, number2: number): number {
-    return number1 + number2;
+  toAbout() {
+    document.getElementById("about")!.scrollIntoView({behavior:"smooth"});
   }
 
-  public subtarct(number1: number, number2: number): number {
-    return number1 - number2;
+  toExperience() {
+    document.getElementById("experience")!.scrollIntoView({behavior:"smooth"});
+  }
+
+  toProjects() {
+    document.getElementById("projects")!.scrollIntoView({behavior:"smooth"});
+  }
+
+  toContact() {
+    document.getElementById("contact")!.scrollIntoView({behavior:"smooth"});
   }
 
 

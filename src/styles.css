@@ -50,7 +50,7 @@ h3 {
 .bold-text {
     font-weight: 700;
     display: block;
-    color: #b3aeae;
+    color: #9569be;
     text-shadow:rgb(241, 245, 247) 0.8em;
 }
 
@@ -70,7 +70,6 @@ p{
 .lkedin,
 .btn,
 .git {
-    color: #666365;  
     text-decoration: none;
     font-weight: 700; 
     font-family: 'Raleway', sans-serif;
@@ -164,11 +163,12 @@ img {
         width: 100%;
         border-top-left-radius: 2.5%;
         border-bottom-left-radius: 2.5%;
+    
     }
 
     .bold-text,
     .git {
-        color: rgb(243, 141, 180); 
+        color: rgb(145, 184, 241); 
     }
     
 
@@ -217,6 +217,10 @@ img {
 
     .presentation {
         padding: .3em;
+    }
+
+    .container{
+        scroll-behavior: smooth;
     }
 
 }
