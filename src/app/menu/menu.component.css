@@ -8,11 +8,26 @@
     font-size: 15px;
     font-weight: bold;
     margin-right: 15px;
+    
 }
 
 .topnav {
     text-align: center;
-    margin-top: 10px; 
+    margin-top: 10px;     
+}
+
+.fixed {
+    position: fixed;
+    width: 100%;
+    transition: 0.2s linear; 
+    top: 0px;
+    background: white;
+}
+
+.nofixed {
+    position: static;
+    transition: 0.2s linear;
+    top: -50px;
 }
 
 a {
@@ -21,6 +36,7 @@ a {
     border-top-right-radius: 10%;
     border-bottom-right-radius: 20%;
     border-bottom-left-radius: 10%;
+    cursor: pointer;
 
 }
 
@@ -43,6 +59,14 @@ a:hover {
         text-align: right;
         margin: 20px 50px 0 0;
     }
+
+    .fixed {
+        position: fixed;
+        width: 100%;
+        transition: 0.2s linear; 
+        margin-top: 0px;
+        background: white;
+    }
     
     a {
         background-color: rgb(154, 154, 194, 0.1); 
@@ -56,4 +80,6 @@ a:hover {
     a:hover {
         background-color: rgba(230, 224, 224, 0.1);
     }  
+
 }
+    

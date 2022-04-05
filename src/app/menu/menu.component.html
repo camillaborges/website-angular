@@ -1,6 +1,6 @@
-<div class="topnav">
+<div class="topnav" id="header" (scroll)="onscroll()" [ngClass]="navbarfixed?'fixed':'nofixed'">
     <a (click)="toAbout()" class="about-camilla">ABOUT</a>
-    <a (click)="toExperience()" href="#experience">EXPERIENCE</a>
-    <a (click)="toProjects()" href="#projects">PROJECTS</a>
-    <a (click)="toContact()" href="#contact">CONTACT</a>
+    <a (click)="toExperience()">EXPERIENCE</a>
+    <a (click)="toProjects()">PROJECTS</a>
+    <a (click)="toContact()">CONTACT</a>
 </div>

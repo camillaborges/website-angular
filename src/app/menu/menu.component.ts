@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-menu',
@@ -28,5 +28,15 @@ export class MenuComponent implements OnInit {
     document.getElementById("contact")!.scrollIntoView({behavior:"smooth"});
   }
 
+  navbarfixed: boolean = false;
+  
+  @HostListener('window:scroll', ['$event']) onscroll() {
+    if(window.scrollY > 100) {
+      this.navbarfixed = true
+    } else {
+    this.navbarfixed = false;
+    }
+  }
 
 }
+
