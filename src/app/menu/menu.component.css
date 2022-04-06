@@ -11,43 +11,46 @@
     
 .topnav {
     text-align: right;
-    margin: 0px 50px 0 0;
+    margin: 0px 50px 0px 0;
 }
 
 .fixed {
     position: fixed;
     width: 100%;
     transition: 0.1s linear; 
-    margin-top: 0px;
     background: white;
-    padding: 0px 0 15px 0;
+}
+
+.nofixed {
+    position: static;
+    transition: 0.2s linear;
+    top: -50px;
 }
     
 a {
-    background-color: rgb(154, 154, 194, 0.1); 
-    border-top-left-radius: 25%;
-    border-top-right-radius: 10%;
-    border-bottom-right-radius: 20%;
-    border-bottom-left-radius: 10%;
     cursor: pointer;
 }
     
 a:hover {
-    background-color: rgba(230, 224, 224, 0.1);
+    background-color: rgba(168, 163, 163, 0.1);
 }  
 
 #input {
     visibility: hidden;
 }
 
+#menuToggle
+    {
+      top: 0px;
+    }
+
 #menu {
-    margin-top: 0px;
+    margin-top: 1px;
 }
 
-@media(max-device-width:640px), screen and (max-width:640px) {
+@media(max-device-width:725px), screen and (max-width:725px) {
     .topnav a {
-        width:50%;
-        color: rgb(48, 52, 90);
+        width:100%;
         text-align: center;
         padding: 2px 2px;
         text-decoration: none;
@@ -55,30 +58,13 @@ a:hover {
         font-weight: bold;
         margin-right: 15px;
         display: flex;
-        flex-direction: column; 
-        justify-content: space-between;
-        
-    }
-    
-    .topnav {
-        text-align: center;
-        margin-top: 5px;  
+        flex-direction: column;   
     }
     
     a {
         background-color: white; 
-        border-top-left-radius: 25%;
-        border-top-right-radius: 10%;
-        border-bottom-right-radius: 20%;
-        border-bottom-left-radius: 10%;
-        cursor: pointer;
-    
     }
-    
-    a:hover {
-        background-color: rgba(230, 224, 224, 0.1);
-    }  
-    
+
     #menuToggle
     {
       display: block;
