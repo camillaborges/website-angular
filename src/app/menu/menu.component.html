@@ -1,6 +1,12 @@
-<div class="topnav" id="header" (scroll)="onscroll()" [ngClass]="navbarfixed?'fixed':'nofixed'">
-    <a (click)="toAbout()" class="about-camilla">ABOUT</a>
-    <a (click)="toExperience()">EXPERIENCE</a>
-    <a (click)="toProjects()">PROJECTS</a>
-    <a (click)="toContact()">CONTACT</a>
+<div class="topnav" id="menuToggle" (scroll)="onscroll()" [ngClass]="navbarfixed?'fixed':'nofixed'">
+    <input type="checkbox" id="input" />
+    <span></span>
+    <span></span>
+    <span></span>
+   <ul id="menu">
+        <a (click)="toAbout()" class="about-camilla">ABOUT ME</a>
+        <a (click)="toExperience()">EXPERIENCE</a>
+        <a (click)="toProjects()">PROJECTS</a>
+        <a (click)="toContact()">CONTACT</a>
+    </ul>
 </div>

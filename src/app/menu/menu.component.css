@@ -1,37 +1,28 @@
 
 .topnav a {
-    width:50%;
     color: rgb(48, 52, 90);
     text-align: center;
-    padding: 2px 2px;
+    padding: 3px 3px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 20px;
     font-weight: bold;
-    margin-right: 15px;
-    
+    margin-right: 50px;
 }
-
+    
 .topnav {
-    text-align: center;
-    margin-top: 5px;     
+    text-align: right;
+    margin: 0px 50px 0 0;
 }
 
 .fixed {
     position: fixed;
     width: 100%;
-    transition: 0.2s linear; 
-    top: 0px;
-    background: white;
-    padding: 5px 0 5px 0;
+    transition: 0.1s linear; 
     margin-top: 0px;
+    background: white;
+    padding: 0px 0 15px 0;
 }
-
-.nofixed {
-    position: static;
-    transition: 0.2s linear;
-    top: -50px;
-}
-
+    
 a {
     background-color: rgb(154, 154, 194, 0.1); 
     border-top-left-radius: 25%;
@@ -39,50 +30,181 @@ a {
     border-bottom-right-radius: 20%;
     border-bottom-left-radius: 10%;
     cursor: pointer;
-
 }
-
+    
 a:hover {
     background-color: rgba(230, 224, 224, 0.1);
 }  
 
-@media(min-width: 750px) {
+#input {
+    visibility: hidden;
+}
+
+#menu {
+    margin-top: 0px;
+}
+
+@media(max-device-width:640px), screen and (max-width:640px) {
     .topnav a {
+        width:50%;
         color: rgb(48, 52, 90);
         text-align: center;
-        padding: 3px 3px;
+        padding: 2px 2px;
         text-decoration: none;
-        font-size: 20px;
+        font-size: 17px;
         font-weight: bold;
-        margin-right: 50px;
+        margin-right: 15px;
+        display: flex;
+        flex-direction: column; 
+        justify-content: space-between;
+        
     }
     
     .topnav {
-        text-align: right;
-        margin: 20px 50px 0 0;
-    }
-
-    .fixed {
-        position: fixed;
-        width: 100%;
-        transition: 0.2s linear; 
-        margin-top: 0px;
-        background: white;
-        padding: 5px 0 5px 0;
+        text-align: center;
+        margin-top: 5px;  
     }
     
     a {
-        background-color: rgb(154, 154, 194, 0.1); 
+        background-color: white; 
         border-top-left-radius: 25%;
         border-top-right-radius: 10%;
         border-bottom-right-radius: 20%;
         border-bottom-left-radius: 10%;
+        cursor: pointer;
     
     }
     
     a:hover {
         background-color: rgba(230, 224, 224, 0.1);
     }  
+    
+    #menuToggle
+    {
+      display: block;
+      position: relative;
+      top: 5px;
+      left: 5px;
+      
+      z-index: 1;
+      
+      -webkit-user-select: none;
+      user-select: none;
+    }
+    
+    #menuToggle a
+    {
+      text-decoration: none;
+      color: #232323;
+      
+      transition: color 0.3s ease;
+    }
+    
+    #menuToggle a:hover
+    {
+      color: tomato;
+    }
+    
+    
+    #menuToggle input
+    {
+      display: block;
+      width: 40px;
+      height: 32px;
+      position: absolute;
+      top: -7px;
+      left: -5px;
+      
+      cursor: pointer;
+      
+      opacity: 0; /* hide this */
+      z-index: 2; /* and place it over the hamburger */
+      
+      -webkit-touch-callout: none;
+    }
+    
+    #menuToggle span
+    {
+      display: block;
+      width: 33px;
+      height: 4px;
+      margin-bottom: 5px;
+      position: relative;
+      
+      background: #cdcdcd;
+      border-radius: 3px;
+      
+      z-index: 1;
+      
+      transform-origin: 4px 0px;
+      
+      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                  background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                  opacity 0.55s ease;
+    }
+    
+    #menuToggle span:first-child
+    {
+      transform-origin: 0% 0%;
+    }
+    
+    #menuToggle span:nth-last-child(2)
+    {
+      transform-origin: 0% 100%;
+    }
+    
+    
+    #menuToggle input:checked ~ span
+    {
+      opacity: 1;
+      transform: rotate(45deg) translate(-2px, -1px);
+      background: #232323;
+    }
+    
+    
+    #menuToggle input:checked ~ span:nth-last-child(3)
+    {
+      opacity: 0;
+      transform: rotate(0deg) scale(0.2, 0.2);
+    }
+    
+    
+    #menuToggle input:checked ~ span:nth-last-child(2)
+    {
+      transform: rotate(-45deg) translate(0, -1px);
+    }
+    
+    
+    #menu
+    {
+      position: absolute;
+      width: 100px;
+      margin: -100px 0 0 -50px;
+      padding: 50px;
+      padding-top: 125px;
+      
+      background: white;
+      list-style-type: none;
+      -webkit-font-smoothing: antialiased;
+      /* to stop flickering of text in safari */
+      
+      transform-origin: 0% 0%;
+      transform: translate(-100%, 0);
+      
+      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    }
+    
+    #menuToggle input:checked ~ ul
+    {
+      transform: none;
+    }
+    
+    #input {
+        visibility: visible;
+    }
+    
+    }
 
-}
+
+
     
