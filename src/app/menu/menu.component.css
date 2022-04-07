@@ -4,7 +4,7 @@
     text-align: center;
     padding: 3px 3px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
     margin-right: 50px;
 }
@@ -47,6 +47,11 @@ a:hover {
 #menu {
     margin-top: 1px;
 }
+
+.logo {
+    position: left;
+}
+
 
 @media(max-device-width:725px), screen and (max-width:725px) {
     .topnav a {
