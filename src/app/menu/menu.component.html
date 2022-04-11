@@ -1,13 +1,15 @@
+<link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap" rel="stylesheet">
 <div class="topnav" id="menuToggle" (scroll)="onscroll()" [ngClass]="navbarfixed?'fixed':'nofixed'">
     <input type="checkbox" id="input" />
     <span></span>
     <span></span>
     <span></span>
-    <ul id="menu">
-        <a class="logo">CB</a>
-        <a (click)="toAbout()" class="about-camilla">About me</a>
-        <a (click)="toExperience()">Experience</a>
-        <a (click)="toProjects()">Projects</a>
-        <a (click)="toContact()">Contact</a>
-    </ul>
+        <a href="app.component.html" class="logo">C.B</a>
+        <ul id="menu">
+            <a (click)="toAbout()" class="about-camilla">About me</a>
+            <a (click)="toExperience()">Experience</a>
+            <a (click)="toProjects()">Projects</a>
+            <a (click)="toContact()">Contact</a>
+        </ul>
 </div>
+

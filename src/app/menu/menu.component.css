@@ -1,30 +1,35 @@
 
+body {
+  margin: 0;
+}
+
 .topnav a {
     color: rgb(48, 52, 90);
     text-align: center;
     padding: 3px 3px;
     text-decoration: none;
-    font-size: 22px;
+    font-size: 25px;
     font-weight: bold;
     margin-right: 50px;
 }
     
 .topnav {
-    text-align: right;
-    margin: 0px 50px 0px 0;
+    text-align: center;
+    margin-top: 20px;
 }
 
 .fixed {
+    overflow: hidden;
     position: fixed;
     width: 100%;
-    transition: 0.1s linear; 
     background: white;
-}
+    padding: 10px;
+    z-index: 1;
+  }
 
 .nofixed {
     position: static;
-    transition: 0.2s linear;
-    top: -50px;
+    transition: 0.1s linear;
 }
     
 a {
@@ -39,17 +44,18 @@ a:hover {
     visibility: hidden;
 }
 
-#menuToggle
-    {
-      top: 0px;
-    }
-
 #menu {
-    margin-top: 1px;
+    padding: 10px;
+    display: inline;
 }
 
 .logo {
-    position: left;
+  position: relative;
+  right: 275px;
+  border: solid rgb(187, 183, 183) 1px;
+  border-radius: 50%;
+  background-color: white;
+  font-family: 'Grape Nuts', cursive;
 }
 
 

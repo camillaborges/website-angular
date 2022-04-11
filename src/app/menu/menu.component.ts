@@ -31,7 +31,7 @@ export class MenuComponent implements OnInit {
   navbarfixed: boolean = false;
   
   @HostListener('window:scroll', ['$event']) onscroll() {
-    if(window.scrollY > 100) {
+    if(window.scrollY > 50) {
       this.navbarfixed = true
     } else {
     this.navbarfixed = false;
