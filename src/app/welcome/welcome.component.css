@@ -27,11 +27,16 @@ h3 {
     margin-right: 10px;
     margin-top:0;
     font-size: 3rem;
-    color: rgb(48, 52, 90);
+    color: black;
     animation-name: example;
     animation-duration: 3s;
     position:relative;
 }
+
+h1 {
+    font-family: 'Kalam', cursive;
+}
+
 
 @keyframes example {
     10%  {opacity: 0; top:50px; bottom:0px; left: 50px}
@@ -75,7 +80,7 @@ h3 {
     margin-right: 40px;
     margin-top:0;
     font-size: 3rem;
-    color: rgb(48, 52, 90);
+    color: black;
     animation-name: example;
     animation-duration: 4s;
     position:relative;
