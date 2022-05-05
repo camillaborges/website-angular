@@ -6,6 +6,9 @@ import { Component, HostListener, OnInit } from '@angular/core';
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent implements OnInit {
+  classList: any;
+  test: any = document.querySelector('.toggle');
+  
 
   constructor() { }
 
@@ -38,5 +41,13 @@ export class MenuComponent implements OnInit {
     }
   }
 
-}
+  toClick() {
+    console.log('Hello')
+    
+  }
+
+  }
+     
+
+
 

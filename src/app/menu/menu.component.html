@@ -1,11 +1,14 @@
-<link href="https://fonts.googleapis.com/css2?family=Abel&family=Grape+Nuts&display=swap" rel="stylesheet">
 <div class="topnav" id="menuToggle" (scroll)="onscroll()" [ngClass]="navbarfixed?'fixed':'nofixed'">
+    <div (click)="toClick()" class="toggle" id="toggle">
         <ul id="menu">
             <a (click)="toAbout()" class="about-camilla">About me</a>
             <a (click)="toExperience()">Experience</a>
             <a (click)="toProjects()">Projects</a>
             <a (click)="toContact()">Contact</a>
         </ul>
-        <a class="logo" href="app.component.html">C.B</a>
+    </div>
+        <a class="logo" href="app.component.html">C Borges</a>
 </div>
+
+
 
