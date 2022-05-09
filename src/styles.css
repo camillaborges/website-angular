@@ -19,7 +19,7 @@ body {
 .presentation {
     min-height: 100vh;
     display: flex;
-    align-items: center;
+    justify-content: center;
    
 }
 
@@ -135,6 +135,10 @@ img {
     color: white;
 }
 
+.about {
+    min-width: 350px;
+}
+
 .portfolio-item h3 {
     margin-bottom: 0.2em;
     font-size:1rem;
@@ -149,6 +153,7 @@ img {
 @media(min-width: 750px) {
     .about {
         display: flex;
+        max-width: 1300px;
     }
 
     .projects {
@@ -157,6 +162,7 @@ img {
         width: 100%;
         border-top-right-radius: 2.5%;
         border-bottom-right-radius: 2.5%;
+        max-width: 1300px;
     }
 
     .carrer {

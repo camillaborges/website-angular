@@ -23,7 +23,7 @@ body {
 }
 
 #menu {
-  display: inline;
+  display: flex;
   float: right;
 }
 
@@ -70,6 +70,7 @@ a {
 
     #menu {
       display: flex;
+      justify-content: center;
       float: none;
     }
 
@@ -95,6 +96,16 @@ a {
      visibility: hidden;
   }
 
+}
+
+@media(max-width:390px) {
+  #menu {
+    padding-left: 0;
+    min-width: 350px;
+    display: flex;
+    justify-content: center;
+
+  }
 }
 
 
