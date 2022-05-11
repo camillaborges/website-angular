@@ -137,6 +137,7 @@ img {
 
 .about {
     min-width: 350px;
+    margin: 0;
 }
 
 .portfolio-item h3 {

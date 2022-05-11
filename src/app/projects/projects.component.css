@@ -1,9 +1,10 @@
 .about {
-    margin: 20px;  
+    margin: 1.25em;  
 }
 
 p { 
     text-align: justify;
     line-height: 1.5;
-    padding: 10px;
+    padding: 0.625em;
 }
+
