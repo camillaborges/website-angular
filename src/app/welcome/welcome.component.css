@@ -94,3 +94,22 @@ h3 {
 }
 
 }
+@media only screen and (max-width: 1075px) and (min-width: 750px) {
+    .introduction {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    max-width: 1100px;
+    margin-top: 1px;
+    }
+
+    .about-me {
+        padding: 0;
+    }
+
+    .profile-picture {
+        min-width: 30%;
+        margin-right: 2.5em;
+        margin-top: 4em;
+    }
+}

@@ -109,6 +109,22 @@ a {
   }
 }
 
+@media only screen and (max-width: 1075px) and (min-width: 750px) {
+  .topnav {
+    display: flex;
+ }
+
+ .topnav a {
+   margin-right: .855em;   
+   margin-left: 2em;;
+ }
+
+ .logo {
+  margin-right: 5em;
+ }
+}
+
+
 
 
     
