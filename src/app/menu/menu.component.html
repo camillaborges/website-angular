@@ -1,13 +1,14 @@
-<div class="topnav" id="menuToggle" (scroll)="onscroll()" [ngClass]="navbarfixed?'fixed':'nofixed'">
-    <div (click)="toClick()" class="toggle" id="toggle">
-        <ul id="menu">
-            <a (click)="toAbout()" class="about-camilla">About me</a>
-            <a (click)="toExperience()">Experience</a>
-            <a (click)="toProjects()">Projects</a>
-            <a (click)="toContact()">Contact</a>
+<div class="topnav" (scroll)="onscroll()" [ngClass]="{'fixed': navbarfixed}">
+    <div class="topnav-container">
+        <a class="logo" href="#">C Borges</a>
+        <ul class="nav-link">
+            <li><a (click)="toAbout()">About me</a></li>
+            <li><a (click)="toExperience()">Experience</a></li>
+            <li><a (click)="toProjects()">Projects</a></li>
+            <li><a (click)="toContact()">Contact</a></li>
         </ul>
+        <i class="fa fa-bars fa-2x burger-menu"></i>
     </div>
-        <a class="logo" href="app.component.html">C Borges</a>
 </div>
 
 

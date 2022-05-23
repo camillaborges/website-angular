@@ -5,33 +5,9 @@ import { Component, HostListener, OnInit } from '@angular/core';
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.css']
 })
-export class MenuComponent implements OnInit {
-  classList: any;
-  test: any = document.querySelector('.toggle');
-  
+export class MenuComponent {
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
-  toAbout() {
-    document.getElementById("about")!.scrollIntoView({behavior:"smooth"});
-  }
-
-  toExperience() {
-    document.getElementById("experience")!.scrollIntoView({behavior:"smooth"});
-  }
-
-  toProjects() {
-    document.getElementById("projects")!.scrollIntoView({behavior:"smooth"});
-  }
-
-  toContact() {
-    document.getElementById("contact")!.scrollIntoView({behavior:"smooth"});
-  }
-
-  navbarfixed: boolean = false;
+  public navbarfixed: boolean = false;
   
   @HostListener('window:scroll', ['$event']) onscroll() {
     if(window.scrollY > 50) {
@@ -41,12 +17,22 @@ export class MenuComponent implements OnInit {
     }
   }
 
-  toClick() {
-    console.log('Hello')
-    
+  public toAbout(): void {
+    document.getElementById("about")!.scrollIntoView({behavior:"smooth"});
   }
 
+  public toExperience(): void {
+    document.getElementById("experience")!.scrollIntoView({behavior:"smooth"});
   }
+
+  public toProjects(): void {
+    document.getElementById("projects")!.scrollIntoView({behavior:"smooth"});
+  }
+
+  public toContact(): void {
+    document.getElementById("contact")!.scrollIntoView({behavior:"smooth"});
+  }
+}
      
 
 
