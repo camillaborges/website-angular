@@ -8,6 +8,7 @@ import { Component, HostListener, OnInit } from '@angular/core';
 export class MenuComponent {
 
   public navbarfixed: boolean = false;
+  public mobileMenuOpen: boolean = false;
   
   @HostListener('window:scroll', ['$event']) onscroll() {
     if(window.scrollY > 50) {
@@ -17,20 +18,32 @@ export class MenuComponent {
     }
   }
 
+  public toggleMobileMenu(): void {
+    this.mobileMenuOpen = !this.mobileMenuOpen;
+  }
+
   public toAbout(): void {
     document.getElementById("about")!.scrollIntoView({behavior:"smooth"});
+    this.closeMobileMenu();
   }
 
   public toExperience(): void {
     document.getElementById("experience")!.scrollIntoView({behavior:"smooth"});
+    this.closeMobileMenu();
   }
 
   public toProjects(): void {
     document.getElementById("projects")!.scrollIntoView({behavior:"smooth"});
+    this.closeMobileMenu();
   }
 
   public toContact(): void {
     document.getElementById("contact")!.scrollIntoView({behavior:"smooth"});
+    this.closeMobileMenu();
+  }
+
+  private closeMobileMenu(): void {
+    this.mobileMenuOpen = false;
   }
 }
      

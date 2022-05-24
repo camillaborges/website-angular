@@ -1,13 +1,13 @@
 <div class="topnav" (scroll)="onscroll()" [ngClass]="{'fixed': navbarfixed}">
     <div class="topnav-container">
         <a class="logo" href="#">C Borges</a>
-        <ul class="nav-link">
+        <ul class="nav-link" [ngClass]="{'opened': mobileMenuOpen}">
             <li><a (click)="toAbout()">About me</a></li>
             <li><a (click)="toExperience()">Experience</a></li>
             <li><a (click)="toProjects()">Projects</a></li>
             <li><a (click)="toContact()">Contact</a></li>
         </ul>
-        <i class="fa fa-bars fa-2x burger-menu"></i>
+        <i class="fa fa-bars fa-2x burger-menu" (click)="toggleMobileMenu()"></i>
     </div>
 </div>
 
