@@ -11,30 +11,8 @@ body {
     margin: 0;
 }
 
-.container {
-    padding: 0 0.2em;
-    max-width: 570px;
-    margin: 0 auto;
-}
-
-.presentation {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-   
-}
-
-h2 {
-    font-size:2.625rem; 
-    margin-top: 0;
-    border-top: 1px white solid;
-    border-bottom: 1px white solid;
-    padding: 0.5em 0;
-}
-
 h1, h2 {
     font-weight: 300;
-   
 }
 
 h3 {
@@ -85,44 +63,6 @@ img {
     border-radius: 60%;
 }
 
-.presentation,
-.projects {
-    background: rgb(231, 231, 231);;
-    color: #252525;
-}
-
-.carrer {
-    background: #252525;
-    color: #fff;
-}
-
-.presentation,
-.carrer,
-.projects {
-    padding: 4.5em 0;
-
-}
-
-.btn,
-.lkedin {
-    display: inline-block;
-    font-size: 0.755rem;
-    padding: 0.5em;
-    margin-top: 1em;
-    border-radius: 4px;
-    
-}
-
-.lkedin {
-    background: #8d8b8c; 
-    color: white; 
-}
-
-.btn {
-    background: #252525;
-    color: white;
-}
-
 .btn:hover,
 .btn:focus,
 .lkedin:hover,
@@ -141,6 +81,7 @@ img {
     font-size:1rem;
 }
 
+/*
 @media(min-width: 750px) {
     .about {
         display: flex;
@@ -163,7 +104,6 @@ img {
     
     }
 
-    .bold-text,
     .git {
         color: rgb(145, 184, 241); 
     }
@@ -212,13 +152,10 @@ img {
          
     }
 
-    .presentation {
-        padding: .3em;
-    }
-
     .container{
         scroll-behavior: smooth;
     }
 
 }
 
+*/

@@ -1,10 +1,173 @@
 .about {
-    margin: 1.25em;  
+    display: flex;
+    align-items: center;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.carrer {
+    padding: 3em 0;
+    background: #252525;
+    color: #fff;
+    margin-left: 1em;
+    border-top-left-radius: 2.5%;
+    border-bottom-left-radius: 2.5%;
+}
+
+.container {
+    padding: 0 0.2em;
+    max-width: 570px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2.625rem; 
+    border-bottom: 1px white solid;
+    margin: 0 0.5em 0.5em 0.5em;
+    padding-bottom: 0.5em;
 }
 
 p { 
     text-align: justify;
     line-height: 1.5;
-    padding: 0.625em;
+    min-height: 280px;
+    margin: 0 1.5em;
 }
 
+.carrer,
+.projects {
+    width: 100%;
+}
+
+.projects {
+    padding: 3em 0;
+    margin-right: 1em;
+    background: rgb(231, 231, 231);;
+    color: #252525;
+    border-top-right-radius: 2.5%;
+    border-bottom-right-radius: 2.5%;
+}
+
+.social-media {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.755rem;
+    font-weight: 600;
+    padding: 0.5em;
+    border-radius: 4px;
+    width: 120px;
+    transition: all .2s ease-in-out;
+    margin-top: 0.5em;
+}
+
+.social-media:hover {
+    transform: scale(1.05);
+}
+
+.github {
+    background: #252525;
+    color: white;    
+}
+
+.linkedin {
+    background: #8d8b8c; 
+    color: white; 
+}
+
+.bold-text {
+    color: rgb(145, 184, 241); 
+}
+
+@media(max-width: 1150px) {
+
+    .carrer,
+    .projects {
+        padding: 2.5em 0;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+        min-height: 325px;
+    }
+
+    .bold-text {
+        font-size: 2.2rem;
+    }
+}
+
+
+@media(max-width: 1024px) {
+
+    .carrer,
+    .projects {
+        padding: 2em 0;
+    }
+}
+
+@media(max-width: 940px) {
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    p {
+        font-size: 0.90rem;
+        min-height: 300px;
+    }
+
+    .git {
+        font-size: 0.8rem;
+    }
+
+    .bold-text {
+        font-size: 2rem;
+    }
+}
+
+@media(max-width: 825px) {
+
+    .about {
+        flex-direction: column;
+        margin: 0 0.75em;
+    }
+
+    .container {
+        max-width: 600px;
+    }
+
+    .carrer,
+    .projects {
+        padding: 2em 0;
+        margin-left: 0.75em;
+        margin-right: 0.75em;
+    }
+
+    .carrer {
+        border-radius: 2.5% 2.5% 0 0;
+    }
+
+    .projects {
+        border-radius: 0 0 2.5% 2.5%;
+    }
+
+    p {
+        min-height: 230px;
+        line-height: 1.75;
+    }
+}
+
+
+@media(max-width: 630px) {
+
+    p {
+        line-height: 1.55;
+    }
+
+    .social-media {
+        margin-top: 1.75em;
+    }
+}
