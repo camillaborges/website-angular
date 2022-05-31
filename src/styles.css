@@ -47,6 +47,7 @@ p{
     text-decoration: none;
     font-weight: 700; 
     font-family: 'Raleway', sans-serif;
+    font-size: 0.9rem;
 }
 
 .git:hover,
@@ -157,5 +158,4 @@ img {
     }
 
 }
-
 */
