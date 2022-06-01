@@ -23,12 +23,12 @@ export class MenuComponent {
   }
 
   public toAbout(): void {
-    document.getElementById("about")!.scrollIntoView({behavior:"smooth"});
+    document.getElementById("about-me")!.scrollIntoView({behavior:"smooth"});
     this.closeMobileMenu();
   }
 
   public toExperience(): void {
-    document.getElementById("experience")!.scrollIntoView({behavior:"smooth"});
+    document.getElementById("about-me")!.scrollIntoView({behavior:"smooth"});
     this.closeMobileMenu();
   }
 
