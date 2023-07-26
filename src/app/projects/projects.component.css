@@ -1,13 +1,13 @@
 .about {
     display: flex;
     align-items: center;
-    max-width: 1300px;
+    max-width: 2000px;
     margin: 0 auto;
 }
 
 .carrer {
     padding: 3em 0;
-    background: #252525;
+    background: rgba(65, 56, 16, 0.774);
     color: #fff;
     margin-left: 1em;
     border-top-left-radius: 2.5%;
@@ -16,8 +16,9 @@
 
 .container {
     padding: 0 0.2em;
-    max-width: 570px;
+    max-width: 800px;
     margin: 0 auto;
+    min-height: 1050px;
 }
 
 h2 {
@@ -56,7 +57,7 @@ p {
     padding: 0.5em 1em;
     border-radius: 4px;
     transition: all .2s ease-in-out;
-    margin-top: 0.5em;
+    margin-top: 1em;
 }
 
 .social-media:hover {
@@ -74,7 +75,7 @@ p {
 }
 
 .bold-text {
-    color: rgb(145, 184, 241); 
+    color: rgb(53, 43, 11); 
 }
 
 @media(max-width: 1150px) {
