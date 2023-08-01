@@ -1,14 +1,35 @@
 .contact {
-    background-color:rgb(48, 52, 90);
-    color:white;
     display: flex;
-    flex-direction: row;
-    height: 2.125em;
+    flex-wrap: wrap;
+    justify-content: center;
+    color:white;
+    padding: 0.5em 0;
+    background-color:rgb(48, 52, 90);
+    align-items: center;
+}
+
+.item {
+    font-size: 0.688rem;
+    flex-grow: 1;
+}
+
+.item.email {
+    text-align: right;
+    margin-right: 1em;
+}
+
+.item.phone {
+    max-width: 250px;
+}
+
+.item.linkedin {
+    text-align: left;
+    margin-left: 1em;
 }
 
 .fa {
-    margin: 0 0.350em 0 1.563em;
-    font-size: 0.700rem;
+    margin-right: 0.300em;
+    font-size: 1.25rem;
 }
 
 a {
@@ -16,37 +37,15 @@ a {
     text-decoration: none;
 }
 
-li {
-    list-style: none;
-    margin-top: 0.525em;  
-    font-size: 0.688rem;
-}
+@media(max-width: 600px) {
 
-@media(min-width: 750px) {
     .contact {
-        background-color:rgb(48, 52, 90);
-        color:white;
-        display: flex;
-        justify-content: center;
-        height: 2.5em;
-    }
-    
-    .fa {
-        margin: 0 0.300em 0 1.563em;
-        font-size: 1rem;
-    }
-    
-    a {
-        color: white;
-        text-decoration: none;
-    }
-    
-    li {
-        list-style: none;
-        margin: 0.625em 4.688em 0.625em 0;  
-        font-size: 0.788rem;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
     }
 
+    .item {
+        margin: 0.35em 0;
+    }
 }
-
-
