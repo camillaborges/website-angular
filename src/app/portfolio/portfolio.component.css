@@ -22,7 +22,7 @@
 }
 
 .bold-text {
-    color: rgb(83, 68, 17);
+    color: rgb(48, 52, 90);
 }
 
 p {
@@ -57,7 +57,7 @@ p {
 }
 
 .portfolio-item img:hover {
-    transform: scale(1.05);
+    transform: scale(1.25);
     cursor: pointer;
 }
 

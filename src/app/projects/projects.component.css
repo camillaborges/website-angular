@@ -7,7 +7,7 @@
 
 .carrer {
     padding: 3em 0;
-    background: rgba(65, 56, 16, 0.774);
+    background: #252525;
     color: #fff;
     margin-left: 1em;
     border-top-left-radius: 2.5%;
@@ -75,7 +75,7 @@ p {
 }
 
 .bold-text {
-    color: rgb(53, 43, 11); 
+    color: rgb(145, 184, 241); 
 }
 
 @media(max-width: 1150px) {
