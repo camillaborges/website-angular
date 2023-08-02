@@ -7,7 +7,8 @@ import { ProjectsComponent } from './projects/projects.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { MenuComponent } from './menu/menu.component';
 import { ContactComponent } from './contact/contact.component';
-import { RouterModule, Routes } from '@angular/router';
+import { NgxGoogleAnalyticsModule } from 'ngx-google-analytics';
+import { environment } from "../environments/environment.prod";
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { RouterModule, Routes } from '@angular/router';
   ],
   imports: [
     BrowserModule,
+    NgxGoogleAnalyticsModule.forRoot(environment.ga),
   ],
   providers: [],
   bootstrap: [AppComponent]
